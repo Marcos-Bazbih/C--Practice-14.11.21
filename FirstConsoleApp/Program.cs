@@ -211,33 +211,35 @@ namespace FirstConsoleApp
 
 
             //********__26__*********
-            Console.WriteLine("Enter 5 numbers");
-            int i = 0;
-            int maxNumber = int.MinValue;
-            int minNumber = int.MaxValue;
-            while (i < 5)
-            {
-                int userNum = int.Parse(Console.ReadLine());
-                maxNumber = Math.Max(maxNumber, userNum);
-                minNumber = Math.Min(minNumber, userNum);
-                i++;
-            }
-            Console.WriteLine(maxNumber);
-            Console.WriteLine(minNumber);
-
-
+            //Console.WriteLine("Enter 5 numbers");
+            //int i = 0;
+            //int maxNumber = int.MinValue;
+            //int minNumber = int.MaxValue;
+            //while (i < 5)
+            //{
+            //    int userNum = int.Parse(Console.ReadLine());
+            //    maxNumber = Math.Max(maxNumber, userNum);
+            //    minNumber = Math.Min(minNumber, userNum);
+            //    i++;
+            //}
+            //Console.WriteLine(maxNumber);
+            //Console.WriteLine(minNumber);
             //********__26__*********
 
 
             //********__27__*********
-            //int userNum = int.Parse(Console.ReadLine());
-            //int sum = 0;
-            //while (userNum > 0)
-            //{
-            //    userNum = int.Parse(Console.ReadLine());
-            //    sum += userNum;
-            //}
-            //Console.WriteLine(sum);
+            Console.WriteLine("Enter 5 numbers");
+            int userNum = int.Parse(Console.ReadLine());
+            int maxNumber = int.MinValue;
+            int minNumber = int.MaxValue;
+            while (userNum > 0)
+            {
+                maxNumber = Math.Max(maxNumber, userNum);
+                minNumber = Math.Min(minNumber, userNum);
+                userNum = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine(maxNumber);
+            Console.WriteLine(minNumber);
             //********__27__*********
 
 
