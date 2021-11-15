@@ -130,18 +130,21 @@ namespace FirstConsoleApp
 
 
             //********__17__*********
-            //int num1 = int.Parse(Console.ReadLine());
-            //int num2 = int.Parse(Console.ReadLine());
-            //int num3 = int.Parse(Console.ReadLine());
-            //int mul = num1 * num2 * num3;
-            //Console.WriteLine(mul);
+            //int i = 0;
+            //int multi = 1;
+            //while (i < 3)
+            //{
+            //    multi *= int.Parse(Console.ReadLine());
+            //    i++;
+            //}
+            //Console.WriteLine(multi);
             //********__17__*********
 
 
             //********__18__*********
-            //int first = int.Parse(Console.ReadLine());
-            //int second = int.Parse(Console.ReadLine());
-            //int result = second/first;
+            //float first = float.Parse(Console.ReadLine());
+            //float second = float.Parse(Console.ReadLine());
+            //float result = second / first;
             //Console.WriteLine(result);
             //********__18__*********
 
@@ -208,30 +211,21 @@ namespace FirstConsoleApp
 
 
             //********__26__*********
-            //int num1 = int.Parse(Console.ReadLine());
-            //int num2 = int.Parse(Console.ReadLine());
-            //int num3 = int.Parse(Console.ReadLine());
-            //int num4 = int.Parse(Console.ReadLine());
-            //int num5 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter 5 numbers");
+            int i = 0;
+            int maxNumber = int.MinValue;
+            int minNumber = int.MaxValue;
+            while (i < 5)
+            {
+                int userNum = int.Parse(Console.ReadLine());
+                maxNumber = Math.Max(maxNumber, userNum);
+                minNumber = Math.Min(minNumber, userNum);
+                i++;
+            }
+            Console.WriteLine(maxNumber);
+            Console.WriteLine(minNumber);
 
-            //int[] numArray = new int[] { num1, num2, num3, num4, num5 };
 
-            //int max= numArray[0];
-            //int min = numArray[0];
-
-            //for (int i = 0; i < numArray.Length; i++)
-            //{
-            //    if(numArray[i] > max)
-            //    {
-            //        max = numArray[i];
-            //    }
-            //    if(numArray[i] < min)
-            //    {
-            //        min = numArray[i];
-            //    }
-            //}
-            //Console.WriteLine(max);
-            //Console.WriteLine(min);
             //********__26__*********
 
 
@@ -250,11 +244,11 @@ namespace FirstConsoleApp
             //********__28__*********
             //int userNum = int.Parse(Console.ReadLine());
             //int module;
-            //int sum = 0;
+            ////int sum = 0;
             //while (userNum > 0)
             //{
-            //    module = userNum % 10;
-            //    sum += module;
+            //    module = userNum % 100;
+            //    Console.WriteLine(module);
             //    userNum /= 10;
             //}
             //Console.WriteLine(sum);
@@ -262,29 +256,56 @@ namespace FirstConsoleApp
 
 
             //********__29__*********
-            Random random = new Random();
-            int randomNum = random.Next(5);
-            int userNum = int.Parse(Console.ReadLine());
-            int tries = 0;
-            while (userNum != randomNum)
-            {
-                if (userNum > randomNum)
-                {
-                    Console.WriteLine("Bigger");
-                }
-                else if(userNum < randomNum)
-                {
-                    Console.WriteLine("Smaller");
-                }
-                else
-                {
-                    randomNum = random.Next(100);
-                    userNum = int.Parse(Console.ReadLine());
-                }
-                    tries++;
-            }
-            Console.WriteLine(tries);
+            //Random random = new Random();
+            //int randomNum = random.Next(1, 100);
+            //int tries = 0;
+
+
+            //bool check = false;
+            //while (!check)
+            //{
+            //    tries++;
+            //    int userNum = int.Parse(Console.ReadLine());
+
+            //    if (userNum > randomNum)
+            //    {
+            //Console.WriteLine("your number is bigger then");
+            //    }
+            //    else if (userNum < randomNum)
+            //    {
+            //        Console.WriteLine("your number is smaller");
+            //    }
+            //    else
+            //    {
+            //        check = true;
+            //        Console.WriteLine("good job");
+            //    }
+            //}
+            //Console.WriteLine(tries);
             //********__29__*********
+
+
+            //********__30__*********
+            //int width = int.Parse(Console.ReadLine());
+            //int height = int.Parse(Console.ReadLine());
+
+            //for (int i = 0; i < height; i++)
+            //{
+            //    for (int j = 0; j < width; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //********__30__*********
+
+
+            //********__31__*********
+
+
+            //********__31__*********
+
+
 
         }
     }
